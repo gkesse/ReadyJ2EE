@@ -6,8 +6,8 @@ set "PATH=C:\Program Files\Apache Software Foundation\Tomcat 7.0\bin;%PATH%"
 ::===============================================
 set "GPROJECT_ROOT=C:\Users\Admin\Downloads\Programs"
 set "GPROJECT_PATH=%GPROJECT_ROOT%\ReadyJ2EE"
-set "GPROJECT_SRC=%GPROJECT_PATH%\code\p01\WEB-INF\sources"
-set "GPROJECT_CLASS=%GPROJECT_PATH%\code\p01\WEB-INF\classes"
+set "GPROJECT_SRC=%GPROJECT_PATH%\code\webapp\WEB-INF\sources"
+set "GPROJECT_CLASS=%GPROJECT_PATH%\code\webapp\WEB-INF\classes"
 ::===============================================
 set "CLASSPATH="
 set "CLASSPATH=C:\Users\Admin\Downloads\Compressed\apache-tomcat-7.0.107-windows-x64\apache-tomcat-7.0.107\lib\servlet-api.jar;%CLASSPATH%"
