@@ -13,6 +13,7 @@ public class GWidget {
         if(key == "widget") return new GWidget();
         if(key == "header") return new GHeader();
         if(key == "footer") return new GFooter();
+        if(key == "home") return new GHome();
         return new GWidget();
     }
     //===============================================
