@@ -4,7 +4,7 @@ GBUILD = $(GPROJECT_CLASS)
 GSRCPATH =\
     $(GSRC) \
 
-all: compile
+all: clean compile
 
 compile:
 	@if not exist $(GBUILD) @mkdir $(GBUILD)

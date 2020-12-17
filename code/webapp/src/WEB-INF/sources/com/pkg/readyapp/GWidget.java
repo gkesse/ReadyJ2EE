@@ -5,22 +5,27 @@ import java.io.*;
 //===============================================
 public class GWidget {
     //===============================================
+    // constructor
+    //===============================================
     public GWidget() {
         
     }
     //===============================================
     public static GWidget Create(String key) {
+        // widget
         if(key == "widget") return new GWidget();
         if(key == "header") return new GHeader();
         if(key == "footer") return new GFooter();
+        if(key == "listbox") return new GListBox();
+        // page
         if(key == "home") return new GHome();
         return new GWidget();
     }
     //===============================================
-    public void print() {
-        GManager.sGApp lApp = GManager.Instance().getData().app;
-        lApp.http_printer.printf("<h1>Bonjour tout (Ok) le monde</h1>\n");
-    }
+    // method
+    //===============================================
+    public void print() {}
+    public void addItem(String text) {}
     //===============================================
 }
 //===============================================
