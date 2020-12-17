@@ -9,13 +9,14 @@ public class GHome extends HttpServlet {
     //===============================================
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException,IOException {
-        response.setContentType("text/html");
-        PrintWriter lPrintWriter = response.getWriter();
-        lPrintWriter.println("<html>");
-        lPrintWriter.println("<head><title>Accueil</title></title>");
-        lPrintWriter.println("<body>");
-        lPrintWriter.println("<h1>Bonjour tout le monde</h1>");
-        lPrintWriter.println("</body></html>");
+        GManager.sGApp lApp = GManager.Instance().getData().app;
+        lApp.http_response = response;
+        lApp.http_printer = response.getWriter();
+        
+        GWidget.Create("header").print();
+        GWidget.Create("body").print();
+        GWidget.Create("footer").print();
+        lApp.http_printer.println("</body></html>");
     }
     //===============================================
 }
