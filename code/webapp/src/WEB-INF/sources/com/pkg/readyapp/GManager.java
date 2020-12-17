@@ -23,6 +23,8 @@ public class GManager {
         mgr.app = new sGApp();
         mgr.app.app_name = "ReadyApp";
         mgr.app.style_path = "data/css/style.css";
+        mgr.app.icon_path = "libs/font_awesome/4.7.0/css/font-awesome.min.css";
+        mgr.app.font_allan = "libs/google_fonts/1.0.0/Allan/css.css";
         mgr.app.sqlite_db_path = getEnv("GSQLITE_DB_PATH");
     }
     //===============================================
@@ -85,6 +87,10 @@ public class GManager {
         public PrintWriter http_printer;
         // style
         public String style_path;
+        // icon
+        public String icon_path;
+        // font
+        public String font_allan;
         // sqlite
         public String sqlite_db_path;
     }

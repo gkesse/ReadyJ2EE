@@ -19,6 +19,7 @@ public class GHome extends GWidget {
         lListBox.addItem("SQLite");
         lListBox.addItem("SQLite");
         lListBox.addItem("SQLite");
+        lListBox.print();
         
         GWidget.Create("footer").print();
     }

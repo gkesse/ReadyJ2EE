@@ -18,6 +18,8 @@ public class GHeader extends GWidget {
         lApp.http_printer.printf("<head>\n", lApp.app_name);
         lApp.http_printer.printf("<title>%s</title>\n", lApp.app_name);
         lApp.http_printer.printf("<link rel='stylesheet' type='text/css' href='%s'>\n", lApp.style_path);
+        lApp.http_printer.printf("<link rel='stylesheet' type='text/css' href='%s'>\n", lApp.icon_path);
+        lApp.http_printer.printf("<link rel='stylesheet' type='text/css' href='%s'>\n", lApp.font_allan);
         lApp.http_printer.printf("<body>\n");
     }
     //===============================================
