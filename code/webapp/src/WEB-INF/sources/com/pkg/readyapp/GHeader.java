@@ -15,12 +15,10 @@ public class GHeader extends GWidget {
         GManager.sGApp lApp = GManager.Instance().getData().app;
         lApp.http_response.setContentType("text/html");
         lApp.http_printer.printf("<html>\n");
-        lApp.http_printer.printf("<head><title>%s</title></title>\n", lApp.app_name);
-        lApp.http_printer.printf("<body style='"+
-        "backgound-color: #301010;"+
-        "color: #ffffff;"+
-        "font-size: 20px;"+
-        "'>\n");
+        lApp.http_printer.printf("<head>\n", lApp.app_name);
+        lApp.http_printer.printf("<title>%s</title>\n", lApp.app_name);
+        lApp.http_printer.printf("<link rel='stylesheet' type='text/css' href='%s'>\n", lApp.style_path);
+        lApp.http_printer.printf("<body>\n");
     }
     //===============================================
 }

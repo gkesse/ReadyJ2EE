@@ -13,14 +13,6 @@ set "GWEB_ROOT=%GPROJECT_PATH%\code\webapp\src"
 set "CLASSPATH="
 set "CLASSPATH=C:\Users\Admin\Downloads\Compressed\apache-tomcat-7.0.107-windows-x64\apache-tomcat-7.0.107\lib\servlet-api.jar;%CLASSPATH%"
 ::===============================================
-set "GDATA_PATH=%GPROJECT_PATH%\data"
-set "GSQLITE_DB_PATH=%GDATA_PATH%\sqlite\config.dat"
-set "GSTYLE_PATH=%GDATA_PATH%\css\style.css"
-set "GFONT_PATH=%GDATA_PATH%\font"
-set "GIMG_PATH=%GDATA_PATH%\img"
-set "GPDF_PATH=%GDATA_PATH%\pdf\config.pdf"
-set "GCMD_PATH=%GDATA_PATH%\cmd\script.bat"
-::===============================================
 set "GGIT_URL=https://github.com/gkesse/ReadyJ2EE.git"
 set "GGIT_NAME=ReadyJ2EE"
 ::===============================================

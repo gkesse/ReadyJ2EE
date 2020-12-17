@@ -22,6 +22,7 @@ public class GManager {
         // app
         mgr.app = new sGApp();
         mgr.app.app_name = "ReadyApp";
+        mgr.app.style_path = "data/css/style.css";
         mgr.app.sqlite_db_path = getEnv("GSQLITE_DB_PATH");
     }
     //===============================================
@@ -79,11 +80,13 @@ public class GManager {
     class sGApp {
         // app
         public String app_name;
-        // sqlite
-        public String sqlite_db_path;
         // http
         public HttpServletResponse http_response;
         public PrintWriter http_printer;
+        // style
+        public String style_path;
+        // sqlite
+        public String sqlite_db_path;
     }
     //===============================================
 }
