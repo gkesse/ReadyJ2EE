@@ -7,7 +7,7 @@ set "GPROJECT_ROOT=C:\Users\Admin\Downloads\Programs"
 set "GPROJECT_PATH=%GPROJECT_ROOT%\ReadyJ2EE"
 set "GPROJECT_SRC=%GPROJECT_PATH%\code\webapp\src\WEB-INF\sources"
 set "GPROJECT_CLASS=%GPROJECT_PATH%\code\webapp\src\WEB-INF\classes"
-set "GMAIN_JAVA=%GPROJECT_SRC%\com\pkg\readyapp\GHome.java"
+set "GMAIN_JAVA=%GPROJECT_SRC%\com\pkg\readyapp\GMain.java"
 set "GWEB_ROOT=%GPROJECT_PATH%\code\webapp\src"
 ::===============================================
 set "CLASSPATH="

@@ -8,8 +8,10 @@ public class GHome extends GWidget {
     }
     //===============================================
     public void print() {
+        GWidget lListBox = GWidget.Create("listbox");
+
         GWidget.Create("header").print();
-        GWidget.Create("body").print();
+        lListBox.print();
         GWidget.Create("footer").print();
     }
     //===============================================

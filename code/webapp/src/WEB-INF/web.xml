@@ -7,12 +7,12 @@
     version="3.0">
     <!-- ============================================ -->
     <servlet>
-        <servlet-name>GHome</servlet-name>
-        <servlet-class>com.pkg.readyapp.GHome</servlet-class>
+        <servlet-name>GMain</servlet-name>
+        <servlet-class>com.pkg.readyapp.GMain</servlet-class>
     </servlet>
     <!-- ============================================ -->
     <servlet-mapping>
-        <servlet-name>GHome</servlet-name>
+        <servlet-name>GMain</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
     <!-- ============================================ -->
