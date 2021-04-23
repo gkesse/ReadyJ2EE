@@ -13,7 +13,8 @@ public class GFooter extends GWidget {
     //===============================================
     public void print() {
         GManager.sGApp lApp = GManager.Instance().getData().app;
-        lApp.http_printer.printf("</body></html>\n");
+        lApp.http_printer.printf("</body>\n");
+        lApp.http_printer.printf("</html>\n");
     }
     //===============================================
 }

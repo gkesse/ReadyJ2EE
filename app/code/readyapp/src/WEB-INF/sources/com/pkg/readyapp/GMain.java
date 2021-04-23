@@ -9,16 +9,10 @@ public class GMain extends HttpServlet {
     //===============================================
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException,IOException {
-        response.setContentType("text/html");
-        PrintWriter lPrintWriter = response.getWriter();
-        lPrintWriter.println("<html>");
-        lPrintWriter.println("<head>");
-        lPrintWriter.println("<title>ReadyApp</title>");
-        lPrintWriter.println("</head>");
-        lPrintWriter.println("<body>");
-        lPrintWriter.println("<h1>[Servlet] Bonjour tout le monde</h1>");
-        lPrintWriter.println("</body>");
-        lPrintWriter.println("</html>");
+        GManager.sGApp lApp = GManager.Instance().getData().app;
+        lApp.http_response = response;
+        lApp.http_printer = response.getWriter();
+        GWidget.Create("home").print();
     }
     //===============================================
 }
