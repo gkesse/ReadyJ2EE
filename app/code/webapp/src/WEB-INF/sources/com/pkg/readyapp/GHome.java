@@ -15,11 +15,12 @@ public class GHome extends GWidget {
         GWidget.Create("header").print();
 
         GWidget lListBox = GWidget.Create("listbox");
-        lListBox.addItem("SQLite");
-        lListBox.addItem("SQLite");
-        lListBox.addItem("SQLite");
-        lListBox.addItem("SQLite");
-        lListBox.print();
+        lListBox.start();
+        lListBox.addItem("SQLite", "book");
+        lListBox.addItem("SQLite", "book");
+        lListBox.addItem("SQLite", "book");
+        lListBox.addItem("SQLite", "book");
+        lListBox.end();
         
         GWidget.Create("footer").print();
     }

@@ -25,7 +25,10 @@ public class GWidget {
     // method
     //===============================================
     public void print() {}
+    public void start() {}
+    public void end() {}
     public void addItem(String text) {}
+    public void addItem(String text, String icon) {}
     //===============================================
 }
 //===============================================

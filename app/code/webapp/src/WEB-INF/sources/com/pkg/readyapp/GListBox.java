@@ -17,18 +17,25 @@ public class GListBox extends GWidget {
     //===============================================
     // method
     //===============================================
-    public void addItem(String text) {
-        m_itemMap.add(text);
-    }
-    //===============================================
-    public void print() {
+    public void start() {
         GManager.sGApp lApp = GManager.Instance().getData().app;
         lApp.http_printer.printf("<div class='listbox'>\n");
-        for(int i = 0; i < m_itemMap.size(); i++) {
-            String lItem = m_itemMap.get(i);
-            lApp.http_printer.printf("<div class='item'><i class='fa fa-book' ></i> %s</div>\n", lItem);
-        }
+    }
+    //===============================================
+    public void end() {
+        GManager.sGApp lApp = GManager.Instance().getData().app;
         lApp.http_printer.printf("</div>\n");
     }
+    //===============================================
+    public void addItem(String text) {
+        GManager.sGApp lApp = GManager.Instance().getData().app;
+        lApp.http_printer.printf("<div class='item'>%s</div>\n", text);
+    }
+    //===============================================
+    public void addItem(String text, String icon) {
+        GManager.sGApp lApp = GManager.Instance().getData().app;
+        lApp.http_printer.printf("<div class='item'><i class='fa fa-%s' ></i> %s</div>\n", icon, text);
+    }
+    //===============================================
 }
 //===============================================
